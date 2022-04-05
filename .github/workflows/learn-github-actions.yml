@@ -1,4 +1,5 @@
-name: learn-github-actions
+- name: Codecov
+  uses: codecov/codecov-action@v2.1.0
 on: [push]
 jobs:
   check-bats-version:
