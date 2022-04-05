@@ -3,6 +3,7 @@ on: [push]
 jobs:
   check-bats-version:
     runs-on: windows-latest
+    
     steps:
       - uses: actions/checkout@master
       - uses: codecov/codecov-action@v2
