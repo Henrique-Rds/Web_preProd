@@ -3,10 +3,12 @@ on: [push]
 jobs:
   check-bats-version:
     runs-on: windows-latest
-    
+
     steps:
       - uses: actions/checkout@master
       - uses: codecov/codecov-action@v2
+        with:
+          token:${{ secrets.bc288af3-ca04-4f4e-890f-c2d20ccec139 }}
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
