@@ -1,5 +1,4 @@
-name: Codecov
-
+name: learn-github-actions
 on: [push]
 jobs:
   check-bats-version:
@@ -7,15 +6,8 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - uses: codecov/codecov-action@v2
-        with:
-          flags: unittests # optional
-          fail_ci_if_error: false # optional (default = false)
-          verbose: false # optional (default = false)
-          
-    steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
-      
         with:
           node-version: '14'
       - run: npm install -g bats
