@@ -1,12 +1,11 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use tests\Math;
 
-class MathTest
+class MathTest extends TestCase
 {
     public function testDouble(){
-        $this->assertEquals(4, mathtest\Math::double(2));
+        $this->assertEquals(4, \tuto\Math::double(2));
 
     }
 }

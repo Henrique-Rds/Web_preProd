@@ -49,7 +49,7 @@ msgid ""
 "reload this page."
 msgstr ""
 "Nepodařilo se načíst Google reCAPTCHA. Zkontrolujte připojení k Internetu a "
-"znovu načtěte tuto stránku."
+"znovu načtěte src stránku."
 
 #: google-captcha.php:256
 msgid "Warning"
@@ -261,7 +261,7 @@ msgid ""
 "Enable to keep submit button disabled until reCAPTCHA is loaded (do not use "
 "this option if you see \"Failed to load Google reCAPTCHA\" message)."
 msgstr ""
-"Nastaví tlačítko odeslat neaktivní, dokud nebude reCAPTCHA načtena (tuto "
+"Nastaví tlačítko odeslat neaktivní, dokud nebude reCAPTCHA načtena (src "
 "možnost nepoužívejte, pokud se zobrazuje zpráva &#8222;Nepodařilo se načíst "
 "Google reCAPTCHA&#8220;)."
 
@@ -625,7 +625,7 @@ msgstr "Výsledky hledání pro"
 #~ msgstr "Pluginy"
 
 #~ msgid "You should %s to use this functionality"
-#~ msgstr "Měli byste %s chcete-li tuto funkci využívat"
+#~ msgstr "Měli byste %s chcete-li src funkci využívat"
 
 #~ msgid "activate"
 #~ msgstr "aktivovat"

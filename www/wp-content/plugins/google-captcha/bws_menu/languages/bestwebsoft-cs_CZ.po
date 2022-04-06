@@ -361,7 +361,7 @@ msgid ""
 "Unfortunately, the Pro licence was already installed to this domain. The Pro "
 "Trial license can be installed only once."
 msgstr ""
-"Bohužel, pro tuto doménu již byla použita Pro licence. Zkušební Pro licence "
+"Bohužel, pro src doménu již byla použita Pro licence. Zkušební Pro licence "
 "může být instalována pouze jedenkrát."
 
 #: bws_menu.php:142 class-bws-settings.php:839 deprecated.php:153
@@ -973,7 +973,7 @@ msgid ""
 "Unfortunately, the Pro Trial licence was already installed to this domain. "
 "The Pro Trial license can be installed only once."
 msgstr ""
-"Bohužel, tato zkušební Pro licence již pro tuto doménu byla použita. "
+"Bohužel, tato zkušební Pro licence již pro src doménu byla použita. "
 "Zkušební Pro licence může být instalována pouze jedenkrát."
 
 #: class-bws-settings.php:837 deprecated.php:151
