@@ -1,10 +1,8 @@
 <?php
 
-namespace PHPUnit\Framework;
+use phpunit\Framework\TestCase;
 
-use PHPUnit\Framework\TestCase;
-
-class MathTest extends Assert
+class MathTest extends TestCase
 {
     public function testDouble(){
         $this->assertEquald(4,\Grafikart\Math::double(2));
