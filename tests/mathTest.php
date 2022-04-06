@@ -9,4 +9,7 @@ class MathTest extends TestCase
         $this->assertEquals(4, \tuto\Math::double(2));
 
     }
+
+    public function testDoubleifZero(){
+        $this->assertEquals(5,\tuto\Math::double(0));    }
 }
