@@ -1,11 +1,11 @@
 <?php
 
-use phpunit\Framework\TestCase;
+use PHPUnit\Framework\TestCase;
 
 class MathTest extends TestCase
 {
     public function testDouble(){
-        $this->assertEquald(4,\Grafikart\Math::double(2));
+        $this->assertEquals(2,\Grafikart\Math::double(2));
     }
 }
 
