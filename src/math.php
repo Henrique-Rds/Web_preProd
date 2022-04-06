@@ -1,6 +1,6 @@
 <?php
 
-namespace testphp;
+namespace mathtest;
 
     class math{
         public static function double($nombre){
