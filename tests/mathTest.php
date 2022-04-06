@@ -1,6 +1,7 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
+require 'src/Math.php';
 
 class MathTest extends TestCase
 {
