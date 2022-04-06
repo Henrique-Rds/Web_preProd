@@ -1,8 +1,8 @@
 <?php
 
-namespace mathtest;
+namespace Grafikart;
 
-    class math{
+    class Math{
         public static function double($nombre){
             return $nombre *2;
         }

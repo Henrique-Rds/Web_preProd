@@ -1,9 +1,13 @@
 <?php
 
-class mathtest extends PHPUnit_Framework_TestCase
+namespace PHPUnit\Framework;
+
+use PHPUnit\Framework\TestCase;
+
+class MathTest extends Assert
 {
     public function testDouble(){
-        $this->assertEquals(4, \mathtest\math::double(2));
+        $this->assertEquald(4,\Grafikart\Math::double(2));
     }
 }
 
