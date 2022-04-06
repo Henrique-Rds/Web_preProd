@@ -3,7 +3,7 @@
 use PHPUnit\Framework\TestCase;
 use tests\Math;
 
-class MathTest extends TestCase
+class MathTest
 {
     public function testDouble(){
         $this->assertEquals(4, mathtest\Math::double(2));
