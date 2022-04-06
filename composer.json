@@ -17,6 +17,10 @@
         "description": {
             "type": "string",
             "description": "Short package description."
+        },
+        "license": {
+            "type": ["string", "array"],
+            "description": "License name. Or an array of license names."
         }
     }
 }
