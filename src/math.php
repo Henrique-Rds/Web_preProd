@@ -1,6 +1,6 @@
 <?php
 
-namespace Grafikart;
+namespace mathtest;
 
     class Math{
         public static function double($nombre){
