@@ -1,1 +1,1 @@
-{"version":1,"defects":{"MathTest::testDouble":4,"MathTest::testDoubleifZero":3},"times":{"MathTest::testDouble":0.008,"MathTest::testDoubleifZero":0.002}}
+{"version":1,"defects":{"MathTest::testDouble":4,"MathTest::testDoubleifZero":3},"times":{"MathTest::testDouble":0.006,"MathTest::testDoubleifZero":0}}

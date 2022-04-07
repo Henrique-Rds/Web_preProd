@@ -11,5 +11,5 @@ class MathTest extends TestCase
     }
 
     public function testDoubleifZero(){
-        $this->assertEquals(5,\tuto\Math::double(0));    }
+        $this->assertEquals(0,\tuto\Math::double(0));    }
 }
