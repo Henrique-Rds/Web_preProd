@@ -1,6 +1,6 @@
 <?php
 
-namespace tuto;
+namespace App;
 
 class Math{
     public static function double($nombre){
