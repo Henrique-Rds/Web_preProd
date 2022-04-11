@@ -114,6 +114,9 @@ function statusToString($stat) {
               echo '<tr><td><a href="' . esc_url( get_author_posts_url($user->ID) ) . '">'. esc_a<?php
                 */
 //détection de langue courante de la page
+
+namespace annuaire;
+
 $currentlang = get_bloginfo('language');
 
 if(strpos($currentlang,'fr')!==false){
