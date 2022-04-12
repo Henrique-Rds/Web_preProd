@@ -7,6 +7,7 @@
 
   $current_user = wp_get_current_user();
   $email = $current_user->user_email;
+
   // Si Jean-françois ou Admin
   if(strcmp($email, 'jean-francois.ferrero@univ-tlse3.fr') !=0 and !current_user_can('administrator')){
     echo("you are not allowed to be here!");
@@ -55,7 +56,7 @@
 								<?php echo '<td>';?><?php echo ($username); ?><?php echo '</td>';?>
 								<?php echo '<td>';?><?php echo ucfirst($row['sujet']); ?><?php echo '</td>';?>
                 <?php echo '<td>';?><?php echo ucfirst($row['observations']); ?><?php echo '</td>';?>
-                <?php echo '<td>';?><a href="http://institut-clement-ader.org/completer-lobservation/?id=<?php echo ($row['id']);?>">Ajouter une observation</a><?php echo '</td>';?>
+                <?php echo '<td>';?><a href="https://ica.preprod.lamp.cnrs.fr/completer-lobservation/?id=<?php echo ($row['id']);?>">Ajouter une observation</a><?php echo '</td>';?>
                
 							 </tr>
               </tbody>
