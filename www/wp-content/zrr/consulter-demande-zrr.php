@@ -11,26 +11,14 @@
     echo("you are not allowed to be here!");
 	  exit();
   }
-  
-  //LIAISON A LA BDD
-	$serveur="localhost";
-	$utilisateur="lab0611sql3";
-	$password="1pm6STt9TE0n";
-	$db="lab0611sql3db";
-	
-	try {
-		$db = new PDO('mysql:host='.$serveur.';dbname='.$db, $utilisateur, $password);
-	} catch(PDOException $e) {
-		print "Erreur : ".$e->getMessage();
-		die();
-	}
+?>
+
+<?php
 
   require("codes snippet/GestionBdd.php");
   $bdd = new GestionBdd();
-  $req = $bdd->getDemandes();
+  $req = $bdd->getDemandesZrr();
 
-  
-  
     
   ?>
   
@@ -57,30 +45,32 @@
 							?>
               <tbody>
 							<tr>
-								<?php if($row['necessite_zrr']==1){echo '<td>';?><?php echo strtoupper($row['nom']); ?><?php echo '</td>';?>
-								<?php echo '<td>';?><?php echo ucfirst($row['prenom']); ?><?php echo '</td>';?>
-                <?php echo '<td>';?><?php echo $username;?><?php echo '</td>';?>
-								<?php echo '<td>acceptée</td>';?>
-                <?php echo '<td> </td>';?>
-                <?php echo '<td>Demande déjà acceptée </td>';}?>
-                 <?php if($row['necessite_zrr']==0 && $row['num_dossier']==0){echo '<td>';?><?php echo strtoupper($row['nom']); ?><?php echo '</td>';?>
-								<?php echo '<td>';?><?php echo ucfirst($row['prenom']); ?><?php echo '</td>';?>
-                <?php echo '<td>';?><?php echo $username;?><?php echo '</td>';?>
-								<?php echo '<td id="accepterDemande"><form action="https://ica.preprod.lamp.cnrs.fr/demandes-zrr/" method="POST"><button style="background-color:green" type="hidden" name="accepter" value="';?><?php echo $row['id']; ?>">accepter<?php echo '</button></form></td>';?>'
-                <?php echo '<td id="refuserDemande"><form action="https://ica.preprod.lamp.cnrs.fr/demandes-zrr/" method="POST"><button style="background-color:red" type="hidden" name="refuser" value="';?><?php echo $row['id']; ?>">refuser<?php echo '</button></form></td>';?>
-                <?php echo '<td>
-              <form id="updateNumDossier" method="POST">
-                <input type="hidden" name="id_zrr" value="'.$row['id'].'">
-                <input type="number" width="5px" name="num_dossier">
-                <input type="submit" value="Mettre à jour">
-              </form>
-              	 </td>';?>
-                <?php } else if($row['necessite_zrr']==0 && $row['num_dossier']!=0){echo '<td>';?><?php echo strtoupper($row['nom']); ?><?php echo '</td>';?>
-								<?php echo '<td>';?><?php echo ucfirst($row['prenom']); ?><?php echo '</td>';?>
-                <?php echo '<td>';?><?php echo $username;?><?php echo '</td>';?>
-								<?php echo '<td id="accepterDemande"><form action="https://ica.preprod.lamp.cnrs.fr/demandes-zrr/" method="POST"><button style="background-color:green" type="hidden" name="accepter" value="';?><?php echo $row['id']; ?>">accepter<?php echo '</button></form></td>';?>'
-                <?php echo '<td id="refuserDemande"><form action="https://ica.preprod.lamp.cnrs.fr/demandes-zrr/" method="POST"><button style="background-color:red" type="hidden" name="refuser" value="';?><?php echo $row['id']; ?>">refuser<?php echo '</button></form></td>';?>
-                <?php echo '<td>';?><?php echo 'Dossier n° '.$row['num_dossier'].'.';?><?php echo '</td>';}?>
+								<?php if($row['necessite_zrr']==1){?>
+                  <td><?php echo strtoupper($row['nom']); ?></td>
+                  <td><?php echo ucfirst($row['prenom']); ?></td>
+                  <td><?php echo $username;?></td>
+                  <td>acceptée</td>
+                  <td> </td>
+                  <td>Demande déjà acceptée </td>
+                <?php } ?>
+                <?php if($row['necessite_zrr']==0 && $row['num_dossier']==0){?><td><?php echo strtoupper($row['nom']); ?></td>
+								<td><?php echo ucfirst($row['prenom']); ?></td>
+                <td><?php echo $username;?></td>
+								<td id="accepterDemande"><form action="https://ica.preprod.lamp.cnrs.fr/demandes-zrr/" method="POST"><button style="background-color:green" type="hidden" name="accepter" value="';?><?php echo $row['id']; ?>">accepter</button></form></td>
+                <td id="refuserDemande"><form action="https://ica.preprod.lamp.cnrs.fr/demandes-zrr/" method="POST"><button style="background-color:red" type="hidden" name="refuser" value="';?><?php echo $row['id']; ?>">refuser</button></form></td>
+                <td>
+                <form id="updateNumDossier" method="POST">
+                  <input type="hidden" name="id_zrr" value="'.$row['id'].'">
+                  <input type="number" width="5px" name="num_dossier">
+                  <input type="submit" value="Mettre à jour">
+                </form>
+              	 </td>
+                <?php } else if($row['necessite_zrr']==0 && $row['num_dossier']!=0){?><td><?php echo strtoupper($row['nom']); ?></td>
+								<td><?php echo ucfirst($row['prenom']); ?></td>
+                <td><?php echo $username;?></td>
+								<td id="accepterDemande"><form action="https://ica.preprod.lamp.cnrs.fr/demandes-zrr/" method="POST"><button style="background-color:green" type="hidden" name="accepter" value="';?><?php echo $row['id']; ?>">accepter</button></form></td>
+                <td id="refuserDemande"><form action="https://ica.preprod.lamp.cnrs.fr/demandes-zrr/" method="POST"><button style="background-color:red" type="hidden" name="refuser" value="';?><?php echo $row['id']; ?>">refuser</button></form></td>
+                <td><?php echo 'Dossier n° '.$row['num_dossier'].'.';?></td><?php } ?>
                </tr>
               </tbody>
 					<?php
