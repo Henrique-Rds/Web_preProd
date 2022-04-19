@@ -1,7 +1,8 @@
 {
     "require-dev": {
         "phpunit/phpunit": "^9.5.20",
-        "phpunit/dbunit":"4.0"
+        "phpunit/dbunit":"*"
+        
     },
 
     "authors": [
@@ -16,7 +17,6 @@
             "App\\" : "src/",
             "annuaire\\" : "www/"
         }
-    },
+    }
 
-    "require": {}
 }
