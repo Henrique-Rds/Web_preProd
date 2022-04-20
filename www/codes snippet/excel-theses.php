@@ -1,5 +1,10 @@
 <?php
 
+  /**
+   * Améliorations à apporter :
+   * Enlever les echo en utilisant les balises php.
+   */
+
   //détection de langue courante de la page
   $currentlang = get_bloginfo('language');
 

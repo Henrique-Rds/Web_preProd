@@ -1,4 +1,18 @@
 <?php
+
+	/**
+	 * Améliorations à apporter :
+   * Code en commentaire innutile et à supprimer
+	 * Changer la liaison BDD en utilisant la classe Gestion BDD (prendre exemple sur les autres codes)
+	 * Enlever les echo de la table en utilisant les balises php.
+   * 
+   * Modification minime : retirer les majuscule des balises du tableau html 
+   * et les mettre en minuscule pour plus de lisibilité
+	 */
+
+
+
+
 /*
 //détection de langue courante de la page
 $currentlang = get_bloginfo('language');

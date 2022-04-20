@@ -1,4 +1,8 @@
 <?php
+/**
+   * Améliorations à apporter :
+   * Enlever les echo en utilisant les balises php.
+   */
 
 			//Liste les fichiers d'un répertoire
   echo'<form action="https://ica.preprod.lamp.cnrs.fr/comptes-rendus/" method="post" enctype="multipart/form-data">

@@ -7,13 +7,22 @@ class testAnnuaire extends TestCase
 
     use TestCaseTrait;
 
-    /**
-     * @return PHPUnit\DbUnit\Database\Connection
-     */
-    public function getConnection()
+    // only instantiate pdo once for test clean-up/fixture load
+    static private $pdo = null;
+
+    // only instantiate PHPUnit\DbUnit\Database\Connection once per test
+    private $conn = null;
+
+    final public function getConnection()
     {
-        $pdo = new PDO('sqlite::memory:');
-        return $this->createDefaultDBConnection($pdo, ':memory:');
+        if ($this->conn === null) {
+            if (self::$pdo == null) {
+                self::$pdo = new PDO('sqlite::memory:');
+            }
+            $this->conn = $this->createDefaultDBConnection(self::$pdo, ':memory:');
+        }
+
+        return $this->conn;
     }
     
     private $stat="adm"; 
