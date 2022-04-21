@@ -1,5 +1,13 @@
 <?php
 
+	/**
+	 * Améliorations à apporter :
+   * Code en commentaire innutile et à supprimer
+	 * Changer la liaison BDD en utilisant la classe Gestion BDD (prendre exemple sur les autres codes)
+	 * Enlever les echo en utilisant les balises php.
+   * 
+	 */
+
 // Restreint l'accès aux administrateurs
 if (!current_user_can('administrator')) {
       echo("You are not allowed to be here !");

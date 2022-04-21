@@ -1,4 +1,9 @@
 <?php
+  /**
+   * Améliorations à apporter :
+   * Enlever les echo en utilisant les balises php.
+   */
+
 echo "
 	<h6>Calcul des clés de répartition de chaque groupe selon les établissements :</h6>
 	<form class='form-stats' action='https://ica.preprod.lamp.cnrs.fr/stats-membres/budgets/' method='POST'>

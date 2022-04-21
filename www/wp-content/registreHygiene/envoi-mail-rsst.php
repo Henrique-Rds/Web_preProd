@@ -4,7 +4,7 @@
     wp_mail('ap-ica@insa-toulouse.fr', 'Nouvelle observation RSST', 'Bonjour,
     
     Une nouvelle observation vient d\'être déposé par '.$username.' dans le registre santée et sécurité du travail.','Bonjour,');
-    wp_mail('henrique.rodrigues@etu.iut-tlse3.fr', 'Nouvelle observation RSST', 'Bonjour,
+    wp_mail('jean-francois.ferrero@univ-tlse3.fr', 'Nouvelle observation RSST', 'Bonjour,
     
     Une nouvelle observation vient d\'être déposé par '.$username.' dans le registre santée et sécurité du travail.','Bonjour,');
     header('Location: https://ica.cnrs.fr/consulter-les-nouvelles-observations/');

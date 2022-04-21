@@ -1,4 +1,8 @@
 <?php
+    /**
+    * Améliorations à apporter :
+    * Changer la liaison BDD en utilisant la classe Gestion BDD (prendre exemple sur les autres codes)
+	*/
 	//LIAISON A LA BDD
 	$serveur="localhost";
 	$utilisateur="lab0611sql3";

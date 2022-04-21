@@ -1,5 +1,10 @@
 <?php
 
+    /**
+    * Améliorations à apporter :
+    * Enlever les echo innutiles
+    */ 
+
       include ('codes snippet/fonctions_snippet.php');
 
       //détection de langue courante de la page

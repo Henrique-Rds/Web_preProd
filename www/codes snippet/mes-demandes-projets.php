@@ -1,4 +1,13 @@
 <?php
+
+	/**
+	* Améliorations à apporter :
+  * Changer la liaison BDD en utilisant la classe Gestion BDD (prendre exemple sur les autres codes)
+  * Enlever les echo innutiles en fermant les balises php
+  * Supprimer le code en commentaire
+	*/
+
+
   // Restreint l'accès aux utilisateurs connectés
   if (!is_user_logged_in()) {
     echo("loggin to access this page");

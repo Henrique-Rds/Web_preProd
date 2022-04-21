@@ -1,6 +1,11 @@
 
 <?php
 
+	/**
+	* Améliorations à apporter :
+  * Commenter toutes les function pour comprendre leur utilité très facilement
+	*/
+
 require_once("codes snippet/database.php");
 
 	class GestionBdd{
