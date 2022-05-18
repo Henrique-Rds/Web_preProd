@@ -193,6 +193,7 @@ $cmp = 0;
             if ($equipe == 'tous' && $statut == 'tous' && $tutelle == 'tous') {
               if (strpos(esc_html($user->status), 'invité') !== false) {
                 echo '<i>'.esc_html($user->display_nam<?php
+                
 function statusToCode($status) {
         
         switch ($status) {
